@@ -1,0 +1,135 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "dogelake:fake_grass_placer",
+        "is_spawnable": false,
+        "is_summonable": true,
+        "is_experimental": false
+      },
+      "component_groups": {
+        "despawn":{ "minecraft:instant_despawn":{ "remove_child_entities": false } }
+      },
+      "components": {
+        "minecraft:collision_box": { "width": 0, "height": 0 },
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "cause": "all",
+            "deals_damage": false
+          }
+        },
+        "minecraft:persistent": { },
+        "minecraft:health": { "value": 9961, "max": 9961 },
+        "minecraft:physics": { "has_collision": false, "push_towards_closest_space": false, "has_gravity": false },
+        "minecraft:pushable": { "is_pushable": false, "is_pushable_by_piston": false },
+        "minecraft:environment_sensor": {
+            "triggers": [
+                { "event": "doge:grass_1", "target": "self", "filters": {"any_of": [
+                    {"test": "is_biome", "value": "forest"},{"test": "has_biome_tag", "value": "flower_forest"},
+                    {"all_of": [ {"test": "has_biome_tag", "value": "forest"}, {"test": "has_biome_tag", "value": "hills"} ] }
+                ]} },
+                { "event": "doge:grass_2", "target": "self", "filters": {"any_of": [
+                    {"test": "has_biome_tag", "value": "extreme_hills"}
+                ]} },
+                { "event": "doge:grass_3", "target": "self", "filters": {"any_of": [
+                    {"test": "has_biome_tag", "value": "desert"}, {"test": "has_biome_tag", "value": "savanna"},
+                    {"test": "has_biome_tag", "value": "nether"}
+                ]} },
+                { "event": "doge:grass_4", "target": "self", "filters": {"all_of": [
+                    {"test": "has_biome_tag", "value": "jungle"},
+                    {"test": "has_biome_tag", "value": "edge", "operator": "not"},
+                    {"test": "has_biome_tag", "value": "bamboo", "operator": "not"}
+                ]} },
+                { "event": "doge:grass_5", "target": "self", "filters": {"any_of": [
+                    {"test": "has_biome_tag", "value": "mooshroom_island"}
+                ]} },
+                { "event": "doge:grass_6", "target": "self", "filters": {"any_of": [
+                    {"test": "has_biome_tag", "value": "birch"}
+                ]} },
+                { "event": "doge:grass_7", "target": "self", "filters": {"any_of": [
+                    {"test": "has_biome_tag", "value": "dripstone_caves"},
+                    {"all_of": [ {"test": "has_biome_tag", "value": "edge"}, {"test": "has_biome_tag", "value": "jungle"} ] }
+                ]} },
+                { "event": "doge:grass_8", "target": "self", "filters": {"any_of": [
+                    {"test": "has_biome_tag", "value": "bamboo"}
+                ]} },
+                { "event": "doge:grass_9", "target": "self", "filters": {"any_of": [
+                    {"all_of": [
+                      {"test": "has_biome_tag", "value": "taiga"},
+                      {"test": "has_biome_tag", "value": "cold", "operator": "not"}
+                    ]},
+                    {"test": "has_biome_tag", "value": "meadow"}
+                ]} },
+                { "event": "doge:grass_10", "target": "self", "filters": {"any_of": [
+                  {"test": "has_biome_tag", "value": "beach"},
+                  {"test": "has_biome_tag", "value": "cold"}
+                ]} },
+                { "event": "doge:grass_11", "target": "self", "filters": {"any_of": [
+                    {"all_of": [
+                      {"test": "has_biome_tag", "value": "taiga"},
+                      {"test": "has_biome_tag", "value": "cold"}
+                    ]},
+                    {"test": "has_biome_tag", "value": "frozen"},
+                    {"test": "has_biome_tag", "value": "grove"}
+                ]} },
+                { "event": "doge:grass_12", "target": "self", "filters": {"any_of": [
+                    {"test": "has_biome_tag", "value": "plains"},
+                    {"test": "is_biome", "value": "beach"},
+                    {"test": "has_biome_tag", "value": "lush_caves"},
+                    {"test": "has_biome_tag", "value": "stony_peak"},
+                    {"test": "has_biome_tag", "value": "deep_dark"}
+                ]} },
+                { "event": "doge:grass_13", "target": "self", "filters": {"any_of": [
+                    {"test": "has_biome_tag", "value": "mesa"}
+                ]} },
+                { "event": "doge:grass_14", "target": "self", "filters": {"any_of": [
+                    {"test": "is_biome", "value": "the_end"}, {"test":"is_biome", "value": "river"},
+                    {"all_of": [
+                      {"test": "has_biome_tag", "value": "ocean"},
+                      {"test": "has_biome_tag", "value": "frozen", "operator": "not"}
+                    ]}
+                ]}},
+                { "event": "doge:grass_15", "target": "self", "filters": {"any_of": [
+                    {"test": "has_biome_tag", "value": "swamp"},
+                    {"test": "has_biome_tag", "value": "mangrove_swamp"}
+                ]} },
+                { "event": "doge:grass_16", "target": "self", "filters": {"any_of": [
+                    {"test": "has_biome_tag", "value": "roofed"}
+                ]} },
+                { "event": "doge:grass_17", "target": "self", "filters": {"any_of": [
+                    {"test": "has_biome_tag", "value": "cherry_grove"}
+                ]} }
+            ]
+        },
+        "minecraft:timer": {
+            "time": 0.2,
+            "looping": false,
+            "time_down_event": {
+                "event": "despawn",
+                "target": "self"
+            }
+        }
+      }
+      ,
+      "events": {
+        "despawn": {"add": { "component_groups": ["despawn"] }},
+        "doge:grass_1":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=1,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_2":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=2,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_3":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=3,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_4":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=4,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_5":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=5,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_6":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=6,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_7":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=7,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_8":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=8,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_9":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=9,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_10":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=10,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_11":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=11,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_12":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=12,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_13":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=13,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_14":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=14,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_15":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_1\"=15,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_16":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_2\"=16,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }},
+        "doge:grass_17":{ "queue_command":{ "command": ["setblock ~~~ dogelake:fake_grass [\"doge:biome_2\"=17,\"doge:init\"=true]"]}, "add": { "component_groups": ["despawn"] }}
+      }
+    }
+  }

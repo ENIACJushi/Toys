@@ -1,0 +1,211 @@
+## Nature
+tile.fake_dirt.name=假泥土
+tile.fake_grass.name=假草方块
+
+## Ore
+tile.fake_emerald_block.name=假绿宝石块
+tile.fake_emerald_ore.name=假绿宝石矿石
+tile.fake_deepslate_emerald_ore.name=假深层绿宝石矿石
+tile.fake_gold_block.name=假金块
+tile.fake_gold_ore.name=假金矿石
+tile.fake_deepslate_gold_ore.name=假深层金矿石
+tile.fake_nether_gold_ore.name=假下界金矿石
+tile.fake_iron_block.name=假铁块
+tile.fake_iron_ore.name=假铁矿石
+tile.fake_deepslate_iron_ore.name=假深层铁矿石
+tile.fake_lapis_block.name=假青金石块
+tile.fake_lapis_ore.name=假青金石矿石
+tile.fake_deepslate_lapis_ore.name=假深板岩青金石矿石
+tile.fake_redstone_block.name=假红石块
+tile.fake_redstone_ore.name=假红石矿石
+tile.fake_deepslate_redstone_ore.name=假深层红石矿石
+tile.fake_coal_block.name=假煤炭块
+tile.fake_coal_ore.name=假煤矿石
+tile.fake_deepslate_coal_ore.name=假深层煤矿石
+tile.fake_copper_ore.name=假铜矿石
+tile.fake_copper_block.name=假铜方块
+tile.fake_deepslate_copper_ore.name=假深层铜矿石
+tile.fake_diamond_ore.name=假钻石矿石
+tile.fake_diamond_block.name=假钻石块
+tile.fake_deepslate_diamond_ore.name=假深层钻石矿石
+tile.fake_glowstone.name=假荧石
+tile.fake_quartz_ore.name=假下界石英矿石
+tile.fake_quartz_bricks.name=假石英砖
+tile.fake_glowing_obsidian.name=假哭泣的黑曜石
+tile.fake_obsidian.name=假黑曜石
+tile.fake_netherite_block.name=假下界合金块
+tile.fake_raw_copper_block.name=假粗铜块
+tile.fake_raw_iron_block.name=假粗铁块
+tile.fake_raw_gold_block.name=假粗金块
+tile.fake_amethyst_block.name=假紫水晶方块
+tile.fake_budding_amethyst.name=假紫水晶母岩
+tile.fake_weathered_copper.name=假锈蚀的铜块
+tile.fake_oxidized_copper.name=假氧化的铜块
+tile.fake_cut_copper.name=假切制铜块
+tile.fake_exposed_cut_copper.name=假外露切制铜块
+tile.fake_weathered_cut_copper.name=假风化切制铜块
+tile.fake_oxidized_cut_copper.name=假氧化切制铜块
+tile.fake_ancient_debris.name=假远古残骸
+
+## Build
+tile.fake_red_nether_brick.name=假红色下界砖
+
+## Others
+tile.fake_reactor_core.name=假反应堆
+
+## waiting
+
+
+## quartz_block_bottom  quartz_block_side  quartz_block_top
+tile.fake_quartz_bricks.name=假石英砖	##
+tile.fake_quartz_block.chiseled.name=假錾制石英块	##
+tile.fake_quartz_block.default.name=假石英块	##
+tile.fake_quartz_block.smooth.name=假平滑石英块	##
+tile.fake_quartz_block.name=假石英块	##
+
+
+tile.fake_lodestone.name=假磁石	## lodestone_side  lodestone_top
+
+tile.fake_waxed_copper.name=假涂蜡铜方块	##
+tile.fake_waxed_exposed_copper.name=假斑驳的涂蜡铜块	##
+tile.fake_waxed_weathered_copper.name=假锈蚀的涂蜡铜块	##
+tile.fake_waxed_oxidized_copper.name=假氧化的涂蜡铜块	##
+tile.fake_waxed_cut_copper.name=假涂蜡切制铜块	##
+tile.fake_waxed_exposed_cut_copper.name=假斑驳的涂蜡切制铜块	##
+tile.fake_waxed_weathered_cut_copper.name=假锈蚀的涂蜡切制铜块	##
+tile.fake_waxed_oxidized_cut_copper.name=假氧化的涂蜡切制铜块	##
+
+
+tile.farmland.name=假耕地	##
+
+
+tile.fake_moss_block.name=假苔藓块	##
+tile.fake_clay.name=假黏土块	##
+tile.fake_hay_block.name=假干草块	##
+tile.fake_podzol.name=假灰化土	##
+tile.fake_snow.name=假雪	##
+tile.fake_mud.name=假泥巴	##
+tile.fake_packed_mud.name=假填充泥浆	##
+tile.fake_mud_bricks.name=假泥砖	##
+tile.fake_nether_wart_block.name=假下界疣方块	##
+tile.fake_warped_wart_block.name=假诡异疣方块	##
+
+tile.fake_coral_block.blue.name=假管珊瑚块	##
+tile.fake_coral_block.pink.name=假脑纹珊瑚块	##
+tile.fake_coral_block.purple.name=假气泡珊瑚块	##
+tile.fake_coral_block.red.name=假火珊瑚块	##
+tile.fake_coral_block.yellow.name=假鹿角珊瑚块	##
+tile.fake_coral_block.blue_dead.name=假失活的管珊瑚块	##
+tile.fake_coral_block.pink_dead.name=假失活的脑纹珊瑚块	##
+tile.fake_coral_block.purple_dead.name=假失活的气泡珊瑚块	##
+tile.fake_coral_block.red_dead.name=假失活的火珊瑚块	##
+tile.fake_coral_block.yellow_dead.name=假失活的鹿角珊瑚块	##
+
+## sand and dirt
+tile.fake_soul_sand.name=假灵魂沙
+tile.fake_gravel.name=假砂砾
+tile.fake_sand.name=假沙子
+tile.fake_red_sand.name=假红沙
+tile.fake_coarse_dirt.name=假砂土
+tile.fake_sandstone_chiseled.name=假錾制砂岩
+tile.fake_sandstone.name=假砂岩
+tile.fake_sandstone_smooth.name=假平滑砂岩
+tile.fake_sandstone_cut.name=假切制砂岩
+tile.fake_red_sandstone.name=假红砂岩
+tile.fake_red_sandstone_chiseled.name=假錾制红砂岩
+tile.fake_red_sandstone_smooth.name=假平滑红砂岩
+tile.fake_red_sandstone_cut.name=假切制红砂岩
+
+
+## Stone
+tile.fake_stone.name=假石头
+tile.fake_cobblestone.name=假圆石
+tile.fake_cobblestone_mossy.name=假苔石
+tile.fake_andesite.name=假安山岩
+tile.fake_polished_andesite.name=假磨制安山岩
+tile.fake_diorite.name=假闪长岩
+tile.fake_polished_diorite.name=假磨制闪长岩
+tile.fake_granite.name=假花岗岩
+tile.fake_polished_granite.name=假磨制花岗岩
+tile.fake_stonebrick.name=假石砖 
+tile.fake_stonebrick_chiseled.name=假錾制石砖
+tile.fake_stonebrick_cracked.name=假裂纹石砖
+tile.fake_stonebrick_mossy.name=假苔石砖
+tile.fake_smooth_stone.name=假平滑石
+tile.fake_end_stone.name=假末地石
+tile.fake_deepslate.name=假深板岩
+tile.fake_cobbled_deepslate.name=假深板岩圆石
+tile.fake_dripstone_block.name=假滴水石块
+tile.fake_polished_deepslate.name=假磨制深板岩
+tile.fake_deepslate_tiles.name=假深板岩瓦
+tile.fake_deepslate_bricks.name=假深板岩砖
+tile.fake_chiseled_deepslate.name=假錾制深板岩
+tile.fake_cracked_deepslate_tiles.name=假裂纹深板岩瓦
+tile.fake_cracked_deepslate_bricks.name=假裂纹深板岩砖
+tile.fake_tuff.name=假凝灰岩
+tile.fake_calcite.name=假方解石
+tile.fake_smooth_basalt.name=假平滑玄武岩
+tile.fake_reinforced_deepslate.name=假强化深板岩
+tile.fake_crimson_nylium.name=假绯红菌岩
+tile.fake_warped_nylium.name=假诡异菌岩
+tile.fake_basalt.name=假玄武岩 
+tile.fake_blackstone.name=假黑石 blackstone blackstone_top
+tile.fake_polished_blackstone_bricks.name=假磨制黑石砖
+tile.fake_cracked_polished_blackstone_bricks.name=假裂纹磨制黑石砖
+tile.fake_chiseled_polished_blackstone.name=假錾制磨制黑石
+tile.fake_gilded_blackstone.name=假镶金黑石
+tile.fake_polished_blackstone.name=假磨制黑石
+tile.fake_polished_basalt.name=假磨制玄武岩 
+tile.fake_soul_soil.name=假灵魂土
+tile.fake_chiseled_nether_bricks.name=假錾制下界砖
+tile.fake_cracked_nether_bricks.name=假裂纹下界砖
+tile.fake_hardened_clay.name=假陶瓦
+tile.fake_nether_brick.name=假下界砖块
+tile.fake_netherrack.name=假下界岩
+tile.fake_magma.name=假岩浆块
+
+
+tile.fake_stained_hardened_clay.black.name=假黑色陶瓦	##
+tile.fake_stained_hardened_clay.blue.name=假蓝色陶瓦	##
+tile.fake_stained_hardened_clay.brown.name=假棕色陶瓦	##
+tile.fake_stained_hardened_clay.cyan.name=假青色陶瓦	##
+tile.fake_stained_hardened_clay.gray.name=假灰色陶瓦	##
+tile.fake_stained_hardened_clay.green.name=假绿色陶瓦	##
+tile.fake_stained_hardened_clay.lightBlue.name=假淡蓝色陶瓦	##
+tile.fake_stained_hardened_clay.lime.name=假黄绿色陶瓦	##
+tile.fake_stained_hardened_clay.magenta.name=假品红色陶瓦	##
+tile.fake_stained_hardened_clay.name=假陶瓦	##
+tile.fake_stained_hardened_clay.orange.name=假橙色陶瓦	##
+tile.fake_stained_hardened_clay.pink.name=假粉红色陶瓦	##
+tile.fake_stained_hardened_clay.purple.name=假紫色陶瓦	##
+tile.fake_stained_hardened_clay.red.name=假红色陶瓦	##
+tile.fake_stained_hardened_clay.silver.name=假淡灰色陶瓦	##
+tile.fake_stained_hardened_clay.white.name=假白色陶瓦	##
+tile.fake_stained_hardened_clay.yellow.name=假黄色陶瓦	##
+tile.fake_prismarine.bricks.name=假海晶石砖	##
+tile.fake_prismarine.dark.name=假暗海晶石	##
+tile.fake_prismarine.rough.name=假海晶石	##
+
+tile.fake_purpur_block.default.name=假紫珀方块	##
+tile.fake_purpur_block.lines.name=假紫珀柱子	##
+tile.fake_purpur_block.chiseled.name=假錾制紫珀	##
+
+
+tile.fake_wool.black.name=假黑色羊毛	##
+tile.fake_wool.blue.name=假蓝色羊毛	##
+tile.fake_wool.brown.name=假棕色羊毛	##
+tile.fake_wool.cyan.name=假青色羊毛	##
+tile.fake_wool.gray.name=假灰色羊毛	##
+tile.fake_wool.green.name=假绿色羊毛	##
+tile.fake_wool.lightBlue.name=假淡蓝色羊毛	##
+tile.fake_wool.lime.name=假黄绿色羊毛	##
+tile.fake_wool.magenta.name=假品红色羊毛	##
+tile.fake_wool.name=假羊毛	##
+tile.fake_wool.orange.name=假橙色羊毛	##
+tile.fake_wool.pink.name=假粉红色羊毛	##
+tile.fake_wool.purple.name=假紫色羊毛	##
+tile.fake_wool.red.name=假红色羊毛	##
+tile.fake_wool.silver.name=假淡灰色羊毛	##
+tile.fake_wool.white.name=假白色羊毛	##
+tile.fake_wool.yellow.name=假黄色羊毛	##
+

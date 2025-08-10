@@ -1,0 +1,67 @@
+{
+   "format_version" : "1.14.0",
+   "sound_definitions": {
+     "cs.ciallo": {
+       "category": "ui",
+       "sounds": [
+         {
+           "name": "sounds/chat_sounds/ciallo",
+           "volume": 0.5
+         }
+       ]
+     },
+     "cs.gugugaga": {
+       "category": "ui",
+       "sounds": [
+         {
+           "name": "sounds/chat_sounds/gugugaga_1",
+           "volume": 0.5
+         },
+         {
+           "name": "sounds/chat_sounds/gugugaga_2",
+           "volume": 0.5
+         },
+         {
+           "name": "sounds/chat_sounds/gugugaga_3",
+           "volume": 0.5
+         }
+       ]
+     },
+     "cs.baka": {
+       "category": "ui",
+       "sounds": [
+         {
+           "name": "sounds/chat_sounds/baka",
+           "volume": 0.5
+         }
+       ]
+     },
+     "cs.gugugu": {
+       "category": "ui",
+       "sounds": [
+         {
+           "name": "sounds/chat_sounds/gugugu",
+           "volume": 0.5
+         }
+       ]
+     },
+     "cs.yee": {
+       "category": "ui",
+       "sounds": [
+         {
+           "name": "sounds/chat_sounds/yee",
+           "volume": 0.5
+         }
+       ]
+     },
+     "cs.huh": {
+       "category": "ui",
+       "sounds": [
+         {
+           "name" : "sounds/mob/cat/huh",
+           "volume" : 0.40
+         }
+       ]
+     }
+   }
+}

@@ -1,0 +1,32 @@
+{
+	"format_version":2,
+	"header":{
+		"min_engine_version":[
+			1,
+			20,
+			30
+		],
+		"name":"假方块",
+		"description":"doge",
+		"uuid":"113263f3-ee4a-4229-988a-ecdc5b68e368",
+		"version":[
+			1,
+			1,
+		    0
+		]
+	},
+	"modules":[
+		{
+			"description":"DogeLake!",
+			"type":"resources",
+			"uuid":"91b5b927-7dba-44c7-9f79-9af31b7fae68",
+			"version":[
+				1,
+				1,
+				0
+			]
+		}
+	],
+	"dependencies":[
+	]
+}
