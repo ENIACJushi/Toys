@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.baozhu.life": {
+			"loop": true,
+			"animation_length": 0.1,
+			"particle_effects": {
+				"0.0": {
+					"effect": "dust",
+					"locator": "dust"
+				}
+			}
+		},
+		"animation.baozhu.rotate": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["v.r_x", "v.r_z", 0] 
+				}
+			}
+		}
+	}
+}

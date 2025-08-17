@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "baozhu:baozhu",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "bee"
+      },
+      "textures": {
+        "default": "textures/entity/baozhu.png"
+      },
+      "geometry": {
+        "default": "geometry.baozhu.baozhu"
+      },
+      "animations": {
+        "rotate": "animation.baozhu.rotate",
+        "life":"animation.baozhu.life"
+      },
+      "particle_effects": {
+        "dust": "baozhu:dust"
+     },
+      "scripts": {
+        "initialize": [
+          "variable.speed=0;",
+          "variable.r_x=0;",
+          "variable.r_z=Math.random(0, 180);",
+          "variable.xz=Math.random(0.005, 0.01);"
+        ],
+        "pre_animation": [
+          "variable.speed=(variable.speed==0)?(q.ground_speed):(variable.speed);",
+          "variable.r_x=(q.is_on_ground)?(variable.r_x):(variable.r_x+variable.speed*0.2);",
+          "variable.r_z=(q.is_on_ground)?(variable.r_z):(variable.r_z+variable.speed*variable.xz);"
+        ],
+        "animate": [
+          "rotate",
+          "life"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.baozhu"
+      ]
+    }
+  }
+}

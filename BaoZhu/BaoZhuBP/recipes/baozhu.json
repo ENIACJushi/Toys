@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "baozhu:baozhu"
+		},
+		"tags": [ "crafting_table" ],
+		"ingredients": [
+			{
+			  "item": "minecraft:gunpowder"
+			},
+			{
+			  "item": "minecraft:bamboo"
+			}
+		],
+		"unlock": [
+			{
+				"item": "minecraft:gunpowder"
+			  },
+			  {
+				"item": "minecraft:bamboo"
+			  }
+		],
+		"result": {
+			"item": "baozhu:baozhu",
+			"count": 8
+		}
+	}
+}

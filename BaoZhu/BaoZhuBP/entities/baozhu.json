@@ -1,0 +1,100 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "baozhu:baozhu",
+        "is_spawnable": false,
+        "is_summonable": true,
+        "is_experimental": false,
+        "runtime_identifier": "minecraft:xp_bottle"
+      },
+      "component_groups": {
+        "despawn":{ "minecraft:instant_despawn":{ "remove_child_entities": false } },
+        "init":{
+          "minecraft:ageable": {
+            "duration": 3,
+            "grow_up": {
+              "event": "baozhu:exploding",
+              "target": "self"
+            }
+          }
+        },
+        "baozhu:explode":{
+            "minecraft:explode": {
+                "breaks_blocks": false,
+                "causes_fire": false,
+                "fuse_lit": true,
+                "fuse_length": -1,
+                "power": 1
+            },
+            "minecraft:despawn": {
+              "despawn_from_chance": true,
+              "despawn_from_distance": {},
+              "despawn_from_inactivity": true,
+              "despawn_from_simulation_edge": true,
+              "min_range_inactivity_timer": 30,
+              "min_range_random_chance": 800,
+              "remove_child_entities": false
+            }
+            
+        }
+      },
+      "components": {
+        "minecraft:projectile": {
+            "liquid_inertia": 0.91,
+            "on_hit": {
+                "stick_in_ground": {}
+            },
+            "power": 1.3,
+            "gravity": 0.05,
+            "angle_offset": 0,
+            "inertia": 1,
+            "anchor": 1,
+            "offset": [0, 0, 0],
+            "catch_fire": false
+        },
+        "minecraft:despawn": {
+          "despawn_from_distance": {
+            "max_distance": 128,
+            "min_distance": 64
+          }
+        },
+        "minecraft:collision_box": {
+          "width": 0,
+          "height": 0
+        },
+        "minecraft:physics": {
+          "has_gravity": true,
+          "has_collision": true
+        },
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": true
+        },
+        "minecraft:conditional_bandwidth_optimization": {
+          "default_values": {
+            "max_optimized_distance": 80.0,
+            "max_dropped_ticks": 5,
+            "use_motion_prediction_hints": true
+          }
+        }
+      },
+      "events": {
+        "despawn"   :{ "add": { "component_groups": [ "despawn" ] } },
+        "minecraft:entity_spawned": {
+          "add": {
+            "component_groups": [
+                "init"
+            ]
+          }
+        },
+        "baozhu:exploding":{
+            "add": {
+                "component_groups": [
+                    "baozhu:explode"
+                ]
+            }
+        }
+      }
+    }
+}  
