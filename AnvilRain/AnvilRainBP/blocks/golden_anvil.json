@@ -1,0 +1,61 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:block": {
+		"description": {
+			"identifier": "doge:golden_anvil",
+			"menu_category": { "category": "items" },
+			"traits" : {
+				"minecraft:placement_position": { "enabled_states": [ "minecraft:block_face" ] },
+				"minecraft:placement_direction": { "enabled_states": ["minecraft:cardinal_direction"], "y_rotation_offset": 180.0 }
+			},
+			"states": {
+				"doge:damage" : [ 0, 1, 2 ]
+			}
+		},
+		"components": {
+			"minecraft:liquid_detection": { "detection_rules": [ { "on_liquid_touches": "no_reaction", "can_contain_liquid": true } ] },
+			"minecraft:destructible_by_mining": { "seconds_to_destroy": 0.2 },
+			"minecraft:material_instances": {
+				"*": { "texture": "doge_golden_anvil_base", "render_method": "alpha_test" },
+				"damaged": { "texture": "doge_golden_anvil_top_damaged_0", "render_method": "alpha_test" }
+			},
+			"minecraft:geometry": "geometry.doge.anvil",
+			"minecraft:collision_box": { "origin": [ -8, 0, -6 ], "size": [ 16, 16, 12 ] },
+			"minecraft:selection_box": { "origin": [ -8, 0, -6 ], "size": [ 16, 16, 12 ] },
+			"minecraft:light_dampening": 1.0
+		},
+		"permutations": [
+			{ "condition": "query.block_state('minecraft:cardinal_direction') == 'north'", "components": { "minecraft:transformation": { "rotation": [ 0, 0, 0 ] } } },
+			{ "condition": "query.block_state('minecraft:cardinal_direction') == 'east'", "components": { "minecraft:transformation": { "rotation": [ 0, 270, 0 ] } } },
+			{ "condition": "query.block_state('minecraft:cardinal_direction') == 'west'", "components": { "minecraft:transformation": { "rotation": [ 0, 90, 0 ] } } },
+			{ "condition": "query.block_state('minecraft:cardinal_direction') == 'south'", "components": { "minecraft:transformation": { "rotation": [ 0, 180, 0 ] } } },
+			{
+				"condition": "query.block_state('doge:damage') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": { "texture": "doge_golden_anvil_base", "render_method": "alpha_test" },
+						"damaged": { "texture": "doge_golden_anvil_top_damaged_0", "render_method": "alpha_test" }
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('doge:damage') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": { "texture": "doge_golden_anvil_base", "render_method": "alpha_test" },
+						"damaged": { "texture": "doge_golden_anvil_top_damaged_1", "render_method": "alpha_test" }
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('doge:damage') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": { "texture": "doge_golden_anvil_base", "render_method": "alpha_test" },
+						"damaged": { "texture": "doge_golden_anvil_top_damaged_2", "render_method": "alpha_test" }
+					}
+				}
+			}
+		]
+	}
+}

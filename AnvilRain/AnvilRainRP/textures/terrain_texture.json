@@ -1,0 +1,48 @@
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"doge_golden_anvil_base": {
+			"textures": [
+				"textures/blocks/doge/golden_anvil_base"
+			]
+		},
+		"doge_golden_anvil_top_damaged_0": {
+			"textures": [
+				"textures/blocks/doge/golden_anvil_top_damaged_0"
+			]
+		},
+		"doge_golden_anvil_top_damaged_1": {
+			"textures": [
+				"textures/blocks/doge/golden_anvil_top_damaged_1"
+			]
+		},
+		"doge_golden_anvil_top_damaged_2": {
+			"textures": [
+				"textures/blocks/doge/golden_anvil_top_damaged_2"
+			]
+		},
+		"doge_diamond_anvil_base": {
+			"textures": [
+				"textures/blocks/doge/diamond_anvil_base"
+			]
+		},
+		"doge_diamond_anvil_top_damaged_0": {
+			"textures": [
+				"textures/blocks/doge/diamond_anvil_top_damaged_0"
+			]
+		},
+		"doge_diamond_anvil_top_damaged_1": {
+			"textures": [
+				"textures/blocks/doge/diamond_anvil_top_damaged_1"
+			]
+		},
+		"doge_diamond_anvil_top_damaged_2": {
+			"textures": [
+				"textures/blocks/doge/diamond_anvil_top_damaged_2"
+			]
+		}
+	}
+}
