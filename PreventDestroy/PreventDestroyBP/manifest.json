@@ -1,0 +1,23 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "pack.name",
+    "uuid": "18b02c20-f6ac-41e7-a512-9ee5ab9ef40f",
+    "version": [ 1, 0, 0 ],
+    "description": "pack.description",
+    "min_engine_version": [ 1, 16, 0 ]
+  },
+  "modules": [
+    {
+      "description": "Prevent_destroy",
+      "version": [ 1, 0, 0 ],
+      "uuid": "3998ed6c-b444-4a53-9297-7a43b96050da",
+      "type": "data"
+    }
+  ],
+  "dependencies": [
+  ],
+  "metadata": {
+    "product_type": "addon"
+  }
+}
