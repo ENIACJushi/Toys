@@ -1,0 +1,23 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "pack.description",
+    "name": "pack.name",
+    "uuid": "9a252436-654c-4bc6-80d6-3cd8b3b7cb41",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 31]
+  },
+  "modules": [
+    {
+      "description": "doge",
+      "type": "data",
+      "uuid": "19990e20-5b06-400c-89f8-52445b068394",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+  ],
+  "metadata": {
+    "product_type": "addon"
+  }
+}
