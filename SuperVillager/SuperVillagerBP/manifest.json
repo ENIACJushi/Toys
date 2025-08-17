@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "SuperVillager",
+    "description": "doge",
+    "uuid": "6f95bd1e-c8a9-42a0-8faa-f5134c9d064e",
+    "version": [ 1, 0, 0 ],
+    "min_engine_version": [ 1, 16, 0 ]
+  },
+  "modules": 
+  [
+    {
+      "description": "SuperVillager",
+      "version": [ 1, 0, 0 ],
+      "uuid": "75fa6f29-af72-4f67-a457-83bfd7081cd2",
+      "type": "data"
+    }
+  ],
+  "dependencies": [
+  ],
+  "metadata": {
+    "product_type": "addon"
+  }
+}
